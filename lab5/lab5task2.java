@@ -1,9 +1,6 @@
-package pckg;
+package pckg.lab5;
 
-/*
- * Create an example at your choice which demostrate 
- * Constructor , mutators , accessors , static class members
- */
+//02. Create an example at your choice which demostrate  Constructor , mutators , accessors , static class members
 
 class Laptop{
 	static int Count=2312131;//static member
@@ -11,8 +8,7 @@ class Laptop{
 	private int IMEI;
 	public void AssignIMEI() {
 		Count++;
-		this.IMEI=Count;
-	}
+		this.IMEI=Count;	}
 	private int Memory;
 	private int Model;
 	private String Name;
@@ -58,9 +54,7 @@ class Laptop{
 	
 	
 	Laptop(){//constructor
-		this.AssignIMEI();	
-	}
-}
+		this.AssignIMEI();}}//laptop close
 
 public class lab5task2{
 public static void main (String[] args) {

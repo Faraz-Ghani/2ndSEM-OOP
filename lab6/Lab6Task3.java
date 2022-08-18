@@ -1,5 +1,5 @@
-package pckg;
-
+package pckg.lab6;
+//03.	Develop a java program that takes 5 floating numbers as runtime arguments and print their total sum and average.
 public class Lab6Task3 {
 public static void main(String[] args) {
 	float f1,f2,f3,f4,f5;

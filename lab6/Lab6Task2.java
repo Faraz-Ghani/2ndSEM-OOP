@@ -1,5 +1,7 @@
-package pckg;
+package pckg.lab6;
 
+//  02.Write a java program to demonstrate the concept of java runtime arguments.
+//  Input your name and roll number and print it on the console.
 public class Lab6Task2 {
 
 	public static void main(String[] args) {

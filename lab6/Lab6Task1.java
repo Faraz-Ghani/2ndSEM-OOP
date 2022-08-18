@@ -1,4 +1,7 @@
-package pckg;
+package pckg.lab6;
+//01.	Write java code that takes a value at runtime and searches it in the array.
+//if the value appears in the array then it prints the position of the value or else prints a message that value is not found.
+
 public class Lab6Task1 {
 public static void main(String[] args) {
 int array[]= {1,2,4,5,7,8,10,22,11,15};

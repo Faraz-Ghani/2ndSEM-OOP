@@ -1,6 +1,9 @@
-package pckg;
-import java.util.Scanner;
+package pckg.lab5;
 
+//01.	Create a class having 4 functions, add, sub, mul and div. Each function accepts 2 parameters and returns the sum, difference, multiplication
+// and division of these numbers.Create a main class having main function that uses the above class.
+
+import java.util.Scanner;
 class Functions{
 	
 	public double sum(double a,double b) {
@@ -17,9 +20,7 @@ class Functions{
 	
 	public double div(double a,double b) {
 		return a/b;
-	}
-
-}
+	}}
 
 public class lab5task1 {
 	
@@ -35,8 +36,7 @@ public static void main (String[] args) {
     System.out.println("Enter the operation (+ , - , * , /) :");
 
     op=s.next();
-    switch(op)
-    {
+    switch(op)    {
     case "+":
     	System.out.println("The Sum of "+a+" and "+b+" is "+func.sum(a, b));
     	break;
@@ -57,8 +57,5 @@ public static void main (String[] args) {
      default:
     	 System.out.println("Invalid input");
     	 break;
-    }
-    }
-}	
+    }}}	
 
- 

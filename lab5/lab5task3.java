@@ -1,10 +1,6 @@
-/*
- * 03.	Create a Student class that stores student data, provides methods for
- *  initializing and displaying student data.
- *  Also provide a parameterized constructor for initializing
- *  student class data members.
- */
-package pckg;
+package pckg.lab5;
+
+//03.	Create a Student class that stores student data, provides methods for initializing and displaying student data Also provide a parameterized constructor for initializing student class data members.
 
 class Student{
 	  private String name;
@@ -55,3 +51,4 @@ s3.DisplayData();
 	}
 
 }
+
