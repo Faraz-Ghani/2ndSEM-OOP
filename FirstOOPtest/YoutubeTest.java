@@ -1,4 +1,5 @@
-package FirstOOPtest;
+package pckg.FirstOOPtest;
+
 import java.util.ArrayList;
 class youtube{
 	String title;

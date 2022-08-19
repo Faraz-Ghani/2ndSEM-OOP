@@ -1,4 +1,5 @@
-package FirstOOPtest;
+package pckg.FirstOOPtest;
+
 class Cricketer {
     String name;
     int BMI;

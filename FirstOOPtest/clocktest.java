@@ -1,4 +1,4 @@
-package FirstOOPtest;
+package pckg.FirstOOPtest;
 
 class Clock{
 	float hour;

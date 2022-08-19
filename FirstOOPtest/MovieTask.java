@@ -1,4 +1,4 @@
-package FirstOOPtest;
+package pckg.FirstOOPtest;
 
 import java.util.Scanner;
  class Genre{

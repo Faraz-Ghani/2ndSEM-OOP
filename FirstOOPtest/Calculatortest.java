@@ -1,4 +1,5 @@
-package FirstOOPtest;
+package pckg.FirstOOPtest;
+
 class Calculator{
 	double x;//attributes
 	double y;
