@@ -148,6 +148,7 @@ class PC{
 }
 
 public class ComputerTest {
+	  
     public static void main(String[] args) {
     	
     	
@@ -160,7 +161,6 @@ public class ComputerTest {
     	
     	System.out.println("Please Enter the company name of the Computer  ");
     	company=sc.next();
-
 
     	System.out.println("Please Enter the Generation of the computer  ");
     	gen=sc.next();
