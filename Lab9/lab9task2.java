@@ -1,13 +1,13 @@
 package pckg.Lab9;
 class mother{
 	public void display() {
-		System.out.println("Mother class display");
+		System.out.println("original display method");
 	}
 }
 
 class daughter extends mother{
 	public void display() {
-		System.out.println("Daughter class display");
+		System.out.println("Over riding method ");
 	}
 }
 public class lab9task2 {

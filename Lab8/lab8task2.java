@@ -24,7 +24,7 @@ public static void main(String[] args) {
 	 System.out.println("Writing to the line");
 	try {
 		BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt"));
-	writer.append("\n"+Input);
+	writer.write(Input);
 	writer.close();
 	System.out.println("Input has been written");
 	}

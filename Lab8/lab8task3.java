@@ -11,9 +11,9 @@ public class lab8task3 {
 public static void main(String[] args) throws IOException {
 		File file = new File("Write.txt");
 Scanner sc = new Scanner(System.in);
-System.out.println("Enter your name");
+System.out.println("Enter name");
 String name=sc.next();
-System.out.println("Enter your rollno");
+System.out.println("Enter dept ");
 String rollno=sc.next();
 	try {
 		RandomAccessFile WriteFile = new RandomAccessFile(file, "rw");

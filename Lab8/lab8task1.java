@@ -11,7 +11,7 @@ public class lab8task1 {
 	  public static void main( String[] args ) throws IOException, ParseException
 	  {
 		  JSONObject Student = new JSONObject();
-	  	  Student.put("Name", "Faraz");
+	  	  Student.put("Name", "Student");
 	  	Student.put("Age", "18");
 	  	Student.put("Dept", "Software");
 	      
