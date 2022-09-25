@@ -1,10 +1,5 @@
 package pckg.Lab9;
-//this code has errors because the question itself was wrong and i am trying my best to follow the guidelines
-//while avoiding apologies.
 interface vehicle{
-	private String color;
-	private String model;
-	private String weight;
 
 	public String getColor();
 	public String getModel();
@@ -31,6 +26,8 @@ final int wheels=4;
 }
 
 class SchoolBus implements Bus{
+
+	
 	private String color= "yellow";
 	private String model="2003";
 	private String weight="7 tons";
