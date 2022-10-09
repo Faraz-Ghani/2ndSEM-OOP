@@ -1,4 +1,4 @@
-package pckg.Lab11_12;
+package lab13task;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -165,13 +165,17 @@ checkBox4.setFont((new Font("Open Sans", Font.PLAIN, 14)));
 		 exit.setFont((new Font("Open Sans", Font.PLAIN, 18)));
 		 
 		 JButton Print = new JButton("Display");
-		 Print.setBounds(600, 500, 100, 20);
+		 Print.setBounds(250, 500, 100, 20);
 		 Print.setFont((new Font("Open Sans", Font.PLAIN, 18)));
 		 
 		 JButton Create = new JButton("Save");
 		 Create.setFont((new Font("Open Sans", Font.PLAIN, 18)));
-		 Create.setBounds(350, 500, 100, 20);
+		 Create.setBounds(400, 500, 100, 20);
 		 
+                 JButton Insert =  new JButton("Insert");
+                 Insert.setFont((new Font("Open Sans", Font.PLAIN, 18)));
+                 Insert.setBounds(550,500,100,20);
+                 
 		 frame.add(Name);
 		 frame.add(Namef);
 		 frame.add(RegNo);
@@ -196,18 +200,44 @@ checkBox4.setFont((new Font("Open Sans", Font.PLAIN, 14)));
 		 frame.add(exit);
 		 frame.add(Print);
 		 frame.add(Create);
+                 frame.add(Insert);
 		 
-
-		 Namef.addKeyListener(new KeyAdapter() {
-			    public void keyTyped(KeyEvent e) {
-			        char c = e.getKeyChar();
-			        if ( ((c < '0') || (c > '9')) && (c != KeyEvent.VK_BACK_SPACE)) {
-			            e.consume();  // if it's not a number, ignore the event
-			        }
-			     }
-			});
+                 
 		
-		 
+		 //insert
+                 Insert.addActionListener(new ActionListener() {
+		 @Override
+		 public void actionPerformed(ActionEvent e) {
+		 	// TODO Auto-generated method stub
+                        Object obj;
+                         String name,roll,batch,section,Gender,Quali,Address,Country;
+
+                        try{
+                           obj = new JSONParser().parse(new FileReader("User.json"));
+					JSONObject read = (JSONObject) obj;
+			name=read.get("Name").toString();
+                        roll=read.get("Regno").toString();
+                        Gender=read.get("Gender").toString();
+                        batch=read.get("Batch").toString();
+                        section=read.get("Section").toString();
+                        Quali=read.get("Qualification").toString();
+                        Country=read.get("Country").toString();
+                        Address=read.get("Address").toString();
+                        
+                                        
+                             	  new Database(name, roll, batch, section, Gender, Quali, Address, Country);
+                System.out.println("Saved to Database Successfully");
+		
+                        }
+                        catch (IOException | ParseException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+                                
+		 }
+		 }
+		 );
+                 
 		//exit
 		 exit.addActionListener(new ActionListener() {
 		 @Override
